@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Issue</title>
+</head>
+<body>
+
+    <center><h2>Your current location - <a id="demo"></a></h2></center>
+
+    <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeNoUsyhsTijXqY6JDa_F6ySlqRNJ8IhF-AzApPntc77xtvPg/viewform?embedded=true" width="640" height="803" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></center>
+
+    <script>
+
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+getLocation()
+
+function showPosition(position) {
+  x.innerHTML = `http://maps.google.com/maps?q=${position.coords.latitude},${position.coords.longitude}`;
+  x.setAttribute('href', `http://maps.google.com/maps?q=${position.coords.latitude},${position.coords.longitude}`)
+}
+    </script>
+</body>
+
+</html>
