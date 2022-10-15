@@ -17,8 +17,26 @@
                 padding:5px;
                 box-sizing:border-box; 
                 /* background-color:rgb(238, 232, 224); */
+               
             }
-            img {
+            @media screen and (max-width: 600px) {
+      .card {
+         width: 100%;
+      }
+   }
+
+   footer {
+  text-align: center;
+  padding: 3px;
+  background-color:rgb(209, 243, 206);
+  color: black;
+  display: block;
+}
+
+
+
+
+    img {
           border: 1px solid #ddd;
           border-radius: 4px;
           padding: 6px;
@@ -30,6 +48,17 @@
         margin-left: auto;
         margin-right: auto;
   width: 30%;
+
+  height:30%;
+        }
+        .center1{
+            display: block;
+        margin-left:auto;
+        margin-right:auto;
+  width:20%;
+
+  height:20%;
+
         }
         .card{
             
@@ -41,28 +70,81 @@
         }
 
         .container{
-            height:344px;
+            height:400px;
             width:100%;
-            border:2px solid green;
-            
+            border:2px solid white ;
+            display:flex;
+            text-align:center;
+            /* flex-direction: row; */
+            /* flex-wrap:wrap; */
+             padding-left :40px;
+             margin-right:60px;
+
+
         }
         .item{
 
+            width:350px;
+            height:350px;
+
+            background-color:rgb(209, 243, 206);
+             border:2px solid green;
+             border-radius:10px;
         }
-            
-           
- 
-            
         
 
-            
-        
-        
+
+
         </style>
        
   </head>
   
   <body>
+
+
+
+
+
+
+
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Waste Manager Buddy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://forms.gle/pFDKdUV28rx4yVKk9">Excessive Waste</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="test1.html">No waste to collect</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="test2.html">Request for bins</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="issue.html">Report wastage issue</a>
+              </li>
+              
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+   
     <h1 style="font-family:Baloo Bhai 2', cursive;">Welcome User,</h1>
 
     <!-- Optional JavaScript -->
@@ -71,16 +153,35 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    
-    <a class="btn btn-primary" href="issue.html" role="button" style="background-color:rgb(77, 110, 73);"></a> 
-    <a class="btn btn-primary" href="issue.html" role="button" style="background-color:rgb(77, 110, 73);"></a> 
-    <a class="btn btn-primary" href="issue.html" role="button" style="background-color:rgb(77, 110, 73);"></a> 
-    <a class="btn btn-primary" href="issue.html" role="button" style="background-color:rgb(77, 110, 73);"> </a> 
+<div class="header " >
 
-    <p>Waste management reduces the effect of waste on the environment, health, and so on. It can also help reuse or recycle resources, such as; paper, cans, glass, and so on. There is various type of waste management that include the disposal of solid, liquid, gaseous, or hazardous substances.
+ <div class="first">
+    <a class="btn btn-primary" href="https://forms.gle/pFDKdUV28rx4yVKk9" role="button" style="background-color:rgb(77, 110, 73);">Excessive Waste</a> 
+</div>
+<div class="first">
+    <a class="btn btn-primary" href="test1.html" role="button" style="background-color:rgb(77, 110, 73);">No Waste to collect</a> 
+</div>
+<div class="first">   
+<a class="btn btn-primary" href="test2.html" role="button" style="background-color:rgb(77, 110, 73);">Request for Bins</a> 
+</div> 
+<div class="first"> 
+<a class="btn btn-primary" href="issue.html" role="button" style="background-color:rgb(77, 110, 73);">Report wastage issue</a>
+</div>
+</div>
+
+
+
+
+    <h3 style="font-family:Baloo Bhai 2', cursive; ">Waste Manager Buddy is the smart waste collector to help you out!!</h3>
+
+   <br>
+   
+    <h3 style="font-family:Arial, Helvetica, sans-serif;color:rgb(16, 64, 16) ">Let's Know About The Smart Waste Management Techniques</h3>
+    
+    <p style="font-size:larger ;">Waste management reduces the effect of waste on the environment, health, and so on. It can also help reuse or recycle resources, such as; paper, cans, glass, and so on. There is various type of waste management that include the disposal of solid, liquid, gaseous, or hazardous substances.
     The process of waste management involves treating solid and liquid waste.
     
-        <p>We have to put wet wastes like leftover foods, vegetables, peels etc. in an organic dustbin which can later be used for composting Segregation of waste can reduce the garbage burden on the already overflowing landfills, thereby curbing the pollution levels.</p>
+        <p style="font-size:larger ;">We have to put wet wastes like leftover foods, vegetables, peels etc. in an organic dustbin which can later be used for composting Segregation of waste can reduce the garbage burden on the already overflowing landfills, thereby curbing the pollution levels.</p>
         <img src="pic/image2.jpg" alt="load image " class="center ">
         <h2 style="color:rgb(0, 56, 0);">Different sources of waste : - </h2>
         <div style="text-align: center;font-family: 'Inter', sans-serif; font-weight: 600; font-size: larger; color:rgb(36, 62, 99)">
@@ -91,9 +192,9 @@
           
           <div class="card" style=" text-align: center;background-color:rgb(203, 241, 203);
           border:3px solid green ; border-radius: 10px;">
-            <p>
+       
                 <h3>Commercial  Waste</h3>
-                 Commercial wastes are produced in schools, colleges, shops, and offices.
+                <p style="font-size:larger ;">Commercial wastes are produced in schools, colleges, shops, and offices.
                  
                  Example: plastic, paper, etc.
      
@@ -102,7 +203,7 @@
           <div class="card" style="text-align: center;background-color:rgb(203, 241, 203);
           border:3px solid green ; border-radius: 10px;">
             <h3>Industrial Waste</h3>
-<p>
+<p style="font-size:larger ;">
             These are the wastes created in factories and industries. Most industries dump their wastes in rivers and seas which cause a lot of pollution.  
             
             Example: plastic, glass, etc.
@@ -110,76 +211,92 @@
           </div>
           <div class="card" style="text-align: center;background-color:rgb(203, 241, 203);
           border:3px solid green ; border-radius: 10px;">
-            <p >
+          
                 <h3>Domestic Waste</h3>
-                The different household wastes which are collected during household activities like cooking, cleaning, etc. are known as domestic wastes.
+                <p style="font-size:larger ;"></pstyle> >  The different household wastes which are collected during household activities like cooking, cleaning, etc. are known as domestic wastes.
                 
                 Example: leaves, vegetable peels, excreta, etc.
-                </p>
+                </pstyle=>
      
           
           </div>
           <div class="card" style="text-align: center;background-color:rgb(203, 241, 203);
           border:3px solid green ; border-radius: 10px;">
-            <p >
-                <h3>Agricultural Waste</h3>
+             <h3>Agricultural Waste</h3>
+            <p style="font-size:larger ;">
+               
                     Various wastes produced in the agricultural field are known as agricultural wastes.
                     
                     Example: cattle waste, weed, husk, etc.
                 </p>
           </div>
           </div>
-Commonly waste is classified into two types: Wet waste and Dry Waste . These two kinds of wastes are explained below:
+<h3 style="color:rgb(0, 56, 0);">Commonly waste is classified into two types: </h3>
+<ul>
+    <li style="font-size:larger ;" >Wet Waste</li>
+    <li style="font-size:larger ;">Dry Waste</li>
+</ul></h3> 
+<h4>These two kinds of wastes are explained below:</h4>
 <div class="container">
     <div class="item" id="item1 ">
         <h3>1.Wet waste</h3>
-        <p>Wet waste is all the kitchen waste that we produce. This can include vegetable peels, used tea, fruits, leftovers, etc. These are basically biodegradable organic waste that can also be composted.Wet waste is used for composting.  </p>
+        <p >Wet waste is all the kitchen waste that we produce. This can include vegetable peels, used tea, fruits, leftovers, etc. These are basically biodegradable organic waste that can also be composted.Wet waste is used for composting.  </p>
      </div>
 
     <div class="item" id="item2 ">
         <h3>2.Dry waste </h3>
-        <p> Dry waste comprises of things like paper, glass, plastic, cardboard, Styrofoam, rubber, metal, food packaging material, etc. Even milk cartons and packets go into a dry waste bin. But, one must rinse and dry these before you put them in the bin. Make sure whatever dry waste you discard is actually dry. Soiled packaging waste in this bin is a big no.
+        <p > Dry waste comprises of things like paper, glass, plastic, cardboard, Styrofoam, rubber, metal, food packaging material, etc. Even milk cartons and packets go into a dry waste bin. But, one must rinse and dry these before you put them in the bin. Make sure whatever dry waste you discard is actually dry. Soiled packaging waste in this bin is a big no.
             Dry waste is recyclable but will be rejected if it is contaminated or soiled.
             </p>
-         </div>
+         </div>  
+   </div>  
+<br>
+
+<h2 style="color:rgb(0, 56, 0);">Types of dustbins</h2>
+<div class="flex-container" style="display: flex; margin-top: 1rem;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center; ">
     
-   </div>
+      <div class="flex-left">
+      <img width="350px" style="border-radius: 20px; display: inline-block;"
+        src="pic/image4.jpg.jpg" alt="">
+      </div>
 
-        <img src="pic/image3.jpg" alt="load image " class="center ">
-  
- 
-   
-       
-           
-
-
-
-
-<h2>Types of dustbins</h2>
-<p>There are three types of dustbins for garbage collection.
-<ol>
-    <li>
-        <b>Green Dustbin </b>
-        <p>The green dustbin is used for wet waste.It consists of biodegradable or compostable stuff that can be converted into manure. Material that can be disposed of in green dustbins is fruits, flowers, vegetables, papers, etc. </p>
-
-    </li>
-    <li>
-        <b>blue Dustbin</b>
-        <p>Blue dustbin contains non-biodegradable waste. Blue dustbin contains all the material that is required to be recycled. Material that can be thrown into blue bins is metal, chemicals, plastic, aluminium cans, etc. 
-
-        </p>
-    </li>
+      <div class="flex-right">
+      <h5
+        style="margin-top: 0px;
+        max-width: 28rem;
+        margin-left: 1rem;
+        margin-right: 1rem; text-align:center; display: inline-block;
+  line-height: 20px; font-weight: 500; text-align: left; font-size:medium; line-height: 2; padding-bottom: 50px; ">
+        There are two types of dustbins for garbage collection.
+    <ol>
+            <li>
+                <b style="font-size:larger ;">Green Dustbin </b>
+                <p style="font-size:larger ;">The green dustbin is used for wet waste.It consists of biodegradable or compostable stuff that can be converted into manure. Material that can be disposed of in green dustbins is fruits, flowers, vegetables, papers, etc. </p>
+        
+            </li>
+            <li>
+                <b style="font-size:larger ;">Blue Dustbin</b>
+                <p style="font-size:larger ;">Blue dustbin contains non-biodegradable waste. Blue dustbin contains all the material that is required to be recycled. Material that can be thrown into blue bins is metal, chemicals, plastic, aluminium cans, etc.
+</p></li>
 </ol>
+      </div>  
 
+    </div>
+ <div style="text-align:center; margin:2px;">
+ <iframe width="600" height="300"    src="https://www.youtube.com/embed/_sSDG5STWmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>  
+    
 </p>
- 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_sSDG5STWmU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h3>Waste Manager Buddy is the smart Waste collector to help you out!!</h3>
-   
-   
-    <h3>Lets Know About The Smart Waste Management Techniques</h3>
-    
-    
+</div>
 
+
+<footer>
+    <p><br>
+    <a>Waste Manager Buddy All Rights Reserved ©2022</a></p>
+  </footer>
   </body>
 </html>
